@@ -50,6 +50,7 @@ if (process.env.PANTHEON_ENVIRONMENT_URL) {
 	}
 }
 
+
 const PREFIX = process.env.PANTHEON_ENVIRONMENT_URL.match(/^([^-]*-)[^-]*/)[0];
 if (!process.env.IS_LIVE_ENVIRONMENT) {
 	backendUrl = `https://${PREFIX}-${process.env.BACKEND_URL.replace(/^https?:\/\//, '')}`
