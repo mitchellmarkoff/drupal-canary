@@ -54,7 +54,6 @@ const injectedOptions = {};
 if (process.env.PANTHEON_UPLOAD_PATH) {
 	injectedOptions['basePath'] = process.env.PANTHEON_UPLOAD_PATH;
 }
-
 module.exports = async () => {
 	const locales = await getLocales();
 	const nextConfig = {
